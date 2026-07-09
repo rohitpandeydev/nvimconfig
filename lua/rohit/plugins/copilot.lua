@@ -22,8 +22,8 @@ local M = {
 
 		require("copilot").setup({
 			suggestion = {
-				enabled = true,
-				auto_trigger = true,
+				enabled = false,
+				auto_trigger = false,
 				keymap = {
 					accept = "<M-l>", -- Alt-l to accept suggestion
 					next = "<M-]>", -- Alt-] to get next suggestion
@@ -32,8 +32,8 @@ local M = {
 				},
 			},
 			panel = {
-				enabled = true,
-				auto_refresh = true,
+				enabled = false,
+				auto_refresh = false,
 				keymap = {
 					jump_prev = "[[",
 					jump_next = "]]",

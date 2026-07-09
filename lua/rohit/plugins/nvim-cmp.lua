@@ -29,7 +29,7 @@ function M.config()
 	require("luasnip.loaders.from_vscode").lazy_load()
 
 	-- Global variable to track completion state
-	vim.g.completion_enabled = true
+	vim.g.completion_enabled = false
 
 	-- Function to toggle only nvim-cmp completion
 	_G.toggle_completion = function()

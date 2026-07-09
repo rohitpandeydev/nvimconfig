@@ -26,6 +26,7 @@ return {
 				hcl = { "hcl" },
 				java = { "google-java-format" },
 			},
+			-- enable format_on_save
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
@@ -33,6 +34,7 @@ return {
 			},
 		})
 
+		-- Keymap for manual format
 		vim.keymap.set({ "n", "v" }, "mp", function()
 			conform.format({
 				lsp_fallback = true,
